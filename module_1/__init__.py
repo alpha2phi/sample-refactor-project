@@ -21,3 +21,8 @@ class Point:
 
     def __str__(self):
         return '({0}, {1})'.format(self.x, self.y)
+
+
+if __name__ == "__main__":
+    item = InventoryItem('Super Hoop', 20.0, 2)
+    print(item.name)
