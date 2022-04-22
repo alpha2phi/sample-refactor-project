@@ -6,6 +6,7 @@ from attr import asdict
 @dataclass
 class InventoryItem:
     """Class for keeping track of an item in inventory."""
+
     name: str
     unit_price: float
     quantity_on_hand: int = 0
@@ -20,9 +21,9 @@ class Point:
     y: int
 
     def __str__(self):
-        return '({0}, {1})'.format(self.x, self.y)
+        return "({0}, {1})".format(self.x, self.y)
 
 
 if __name__ == "__main__":
-    item = InventoryItem('Super Hoop', 20.0, 2)
+    item = InventoryItem("Super Hoop", 20.0, 2)
     print(item.name)
